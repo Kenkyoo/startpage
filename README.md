@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# Startpage Firefox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una homepage minimalista y personalizable para Firefox, hecha con **React**, **Vite**, **TailwindCSS** y **DaisyUI**, usando el tema **Catppuccin**.
 
-Currently, two official plugins are available:
+🔗 **Demo:** [startpage-firefox.netlify.app](https://startpage-firefox.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 **Repositorio:** [github.com/Kenkyoo/startpage](https://github.com/Kenkyoo/startpage)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌤️ Características
 
-## Expanding the ESLint configuration
+* Muestra la **hora** y la **fecha** actual.
+* Consulta y muestra el **clima** usando una API.
+* Lista tus **marcadores favoritos**.
+* Tema **Catppuccin** aplicado a **DaisyUI** para un diseño agradable.
+* Diseño **responsive** y simple, ideal como nueva pestaña o homepage.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧩 Tecnologías
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* ⚛️ React
+* ⚡ Vite
+* 🎨 TailwindCSS + DaisyUI
+* 🍧 Catppuccin Theme Plugin
+* 🌍 API de clima (OpenWeather u otra)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🚀 Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/Kenkyoo/startpage.git
+cd startpage
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧱 Build de producción
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Los archivos generados estarán en la carpeta `dist/`, listos para desplegar en Netlify, Vercel u otro servicio.
+
+---
+
+## ⚙️ Configuración
+
+Puedes editar los archivos para cambiar tus **marcadores**, la **ubicación del clima**, o el **formato de hora y fecha** según tus preferencias.
+
+---
+
+## 🖼️ Captura
+
+*(Agrega aquí una imagen de la startpage, por ejemplo `/public/preview.png`)*
+
+---
+
+## 🧠 Autor
+
+**Franco**
+[GitHub](https://github.com/Kenkyoo)
+
+---
+
+## 🐾 Licencia
+
+Este proyecto está bajo la licencia MIT.
