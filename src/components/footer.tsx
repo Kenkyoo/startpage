@@ -1,10 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-3 mt-3">
+    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-3 absolute bottom-0">
       <aside>
-        <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by ACME
-          Industries Ltd
+        <p className="text-accent">
+          Dev by Kenkyo {new Date().getFullYear()} - Github
         </p>
       </aside>
     </footer>

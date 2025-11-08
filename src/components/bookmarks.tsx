@@ -1,6 +1,6 @@
 export default function Bookmarks() {
   return (
-    <div className="card card-border bg-base-200 w-96 h-96 shadow-sm border-accent">
+    <div className="card card-border bg-base-200 w-96 shadow-sm border-accent">
       <div className="card-body">
         <h2 className="card-title text-success text-3xl">Bookmarks</h2>
         <ul className="menu bg-base-200 rounded-box w-56 text-2xl">

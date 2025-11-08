@@ -9,12 +9,12 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div data-theme="mocha" className="min-h-screen bg-base">
+    <div data-theme="mocha" className="min-h-screen  bg-base">
       <div>
         <Navbar />
       </div>
-      <div className="flex flex-col items-center justify-center px-15">
-        <div className="flex justify-between items-center gap-8 my-5">
+      <div className="flex flex-col items-center justify-center px-10 gap-10">
+        <div className="flex justify-between items-center gap-12 my-5">
           <div>
             <Clock />
           </div>
@@ -22,7 +22,7 @@ function App() {
             <Weather />
           </div>
         </div>
-        <div className="flex justify-around items-center gap-8">
+        <div className="flex justify-around items-center gap-12">
           <div>
             <Anime />
           </div>
@@ -33,7 +33,6 @@ function App() {
             <Apps />
           </div>
         </div>
-        <div></div>
       </div>
       <Footer />
     </div>
